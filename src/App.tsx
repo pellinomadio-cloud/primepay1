@@ -486,18 +486,28 @@ export default function App() {
           <section>
             <h5 className="text-lg font-bold mb-4">More Services</h5>
             <div className="grid grid-cols-4 gap-4">
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/60">
+              <a 
+                href="https://t.me/PAYGOLEGIT001" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex flex-col items-center gap-2 group hover:scale-105 active:scale-95 transition-all text-center"
+              >
+                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/60 group-hover:bg-white/10 group-hover:text-white transition-colors">
                   <UserIcon size={20} />
                 </div>
-                <span className="text-[10px] text-white/60">Support</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/60">
+                <span className="text-[10px] text-white/60 group-hover:text-white transition-colors">Support</span>
+              </a>
+              <a 
+                href="https://t.me/PAYGOLEGIT001" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex flex-col items-center gap-2 group hover:scale-105 active:scale-95 transition-all text-center"
+              >
+                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white/60 group-hover:bg-white/10 group-hover:text-white transition-colors">
                   <History size={20} />
                 </div>
-                <span className="text-[10px] text-white/60">Group</span>
-              </div>
+                <span className="text-[10px] text-white/60 group-hover:text-white transition-colors">Group</span>
+              </a>
               <div className="flex flex-col items-center gap-2">
                 <button 
                   onClick={handleDailyClaim}
@@ -1100,7 +1110,18 @@ export default function App() {
                   <XCircle size={24} />
                 </div>
                 <h4 className="font-bold text-red-400">Verification Failed</h4>
-                <p className="text-xs text-red-400/80">We couldn't verify your payment. Please contact support or try again with a clearer proof.</p>
+                <p className="text-xs text-red-400/80">
+                  We couldn't verify your payment. Please{' '}
+                  <a 
+                    href="https://t.me/PAYGOLEGIT001" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="underline font-bold hover:text-white transition-colors"
+                  >
+                    contact support
+                  </a>{' '}
+                  or try again with a clearer proof.
+                </p>
                 <button 
                   onClick={() => setPaymentStatus('idle')}
                   className="text-white bg-red-500 px-6 py-2 rounded-xl text-sm font-bold mt-2"
